@@ -18,11 +18,11 @@
     --rule: rgba(241,237,225,0.16);
     --rule-strong: rgba(241,237,225,0.3);
   }
-
+ 
   * { box-sizing: border-box; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body{
     margin:0;
     background: var(--bg);
@@ -30,25 +30,25 @@
     font-family: 'Inter', system-ui, sans-serif;
     line-height: 1.6;
   }
-
+ 
   h1, h2, h3, .display {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 600;
     letter-spacing: -0.01em;
   }
-
+ 
   .mono {
     font-family: 'IBM Plex Mono', monospace;
   }
-
+ 
   a { color: var(--blue); }
-
+ 
   .wrap {
     max-width: 880px;
     margin: 0 auto;
     padding: 0 28px;
   }
-
+ 
   /* NAV */
   nav {
     position: sticky;
@@ -86,12 +86,12 @@
     font-size: 0.92rem;
   }
   .navlinks a:hover, .navlinks a:focus-visible { color: var(--gold); }
-
+ 
   a:focus-visible, button:focus-visible {
     outline: 2px solid var(--gold);
     outline-offset: 3px;
   }
-
+ 
   /* HERO */
   .hero {
     position: relative;
@@ -140,7 +140,7 @@
   .btn.ghost {
     color: var(--chalk);
   }
-
+ 
   .hero-figure {
     aspect-ratio: 1 / 1;
     width: 100%;
@@ -159,12 +159,12 @@
   .chalk-path.blue { stroke: var(--blue); animation-delay: .3s; }
   .chalk-path.dash { stroke-dasharray: 4 6; }
   .chalk-label { fill: var(--chalk-dim); font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
-
+ 
   @keyframes draw { to { stroke-dashoffset: 0; } }
   @media (prefers-reduced-motion: reduce) {
     .chalk-path { animation: none; stroke-dashoffset: 0; }
   }
-
+ 
   /* SECTIONS */
   section { padding: 64px 0; border-top: 1px solid var(--rule); }
   .eyebrow {
@@ -177,7 +177,7 @@
   }
   section h2 { font-size: 1.7rem; margin: 0 0 20px; }
   section > .wrap > p { color: var(--chalk-dim); max-width: 62ch; }
-
+ 
   /* ABOUT */
   .about-grid {
     display: grid;
@@ -186,7 +186,7 @@
     margin-top: 28px;
   }
   .about-grid p { margin: 0; }
-
+ 
   /* COMPETITIONS */
   .comp-list {
     margin-top: 28px;
@@ -226,7 +226,7 @@
     .comp-item { grid-template-columns: 1fr; gap: 6px; }
     .comp-when { text-align: left; }
   }
-
+ 
   /* GOALS - timeline */
   .timeline {
     margin-top: 32px;
@@ -257,7 +257,7 @@
   }
   .tl-item h3 { margin: 0 0 6px; font-size: 1.15rem; }
   .tl-item p { margin: 0; color: var(--chalk-dim); max-width: 58ch; }
-
+ 
   /* JOIN / FOOTER */
   footer {
     border-top: 1px solid var(--rule);
@@ -275,7 +275,7 @@
     font-size: 0.82rem;
     font-family: 'IBM Plex Mono', monospace;
   }
-
+ 
   @media (max-width: 720px) {
     .hero .wrap { grid-template-columns: 1fr; }
     .hero-figure { max-width: 280px; margin: 0 auto; }
@@ -284,7 +284,7 @@
 </style>
 </head>
 <body>
-
+ 
 <nav>
   <div class="wrap">
     <a class="brand" href="#top">AP Math Explorers Club</a>
@@ -296,7 +296,7 @@
     </ul>
   </div>
 </nav>
-
+ 
 <header class="hero" id="top">
   <div class="wrap">
     <div>
@@ -321,7 +321,7 @@
     </div>
   </div>
 </header>
-
+ 
 <section id="about">
   <div class="wrap">
     <p class="eyebrow">About</p>
@@ -332,13 +332,13 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="competitions">
   <div class="wrap">
     <p class="eyebrow">Competitions</p>
     <h2>What we compete in</h2>
     <p>A rundown of the competitions our members take each year. Replace dates and descriptions with your club's actual schedule.</p>
-
+ 
     <div class="comp-list">
       <div class="comp-item">
         <span class="comp-tag">AMC</span>
@@ -375,13 +375,13 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="goals">
   <div class="wrap">
     <p class="eyebrow">Long-term goals</p>
     <h2>Where we're headed</h2>
     <p>The club's roadmap — edit these to match your actual plans and timelines.</p>
-
+ 
     <div class="timeline">
       <div class="tl-item">
         <span class="tl-when">This year</span>
@@ -401,7 +401,7 @@
     </div>
   </div>
 </section>
-
+ 
 <footer id="join">
   <div class="wrap">
     <p class="eyebrow">Join</p>
@@ -416,6 +416,7 @@
     </div>
   </div>
 </footer>
-
+ 
 </body>
 </html>
+ 
